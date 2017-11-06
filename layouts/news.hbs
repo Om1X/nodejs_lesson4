@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GetNews</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <div class="news">
+        <h1>Новости {{#if title}}{{title}}{{/if}}</h1>
+        {{#each news}}
+            <div class="news__row">
+                <div class="news__title">{{this.title}}</div>
+                <div class="news__description">{{{this.description}}}</div>
+                <div class="news__link">
+                    <a href="{{this.link}}" target="_blank" class="news__read">читать >></a>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</body>
+</html>

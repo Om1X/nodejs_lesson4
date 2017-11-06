@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GetNews</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+<div class="form">
+    <form action="/" method="post">
+        <h1>Новости</h1>
+        <fieldset>
+            <label for="category"></label>
+            <select name="newsCategory" id="category">
+                <option value="0" disabled selected>Выберите категорию</option>
+                <option value="politics">Политика</option>
+                <option value="economics">Экономика</option>
+                <option value="society">Общество</option>
+                <option value="incident">События</option>
+                <option value="sport">Спорт</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <input type="submit" value="Читать">
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>
